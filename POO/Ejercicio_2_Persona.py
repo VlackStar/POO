@@ -14,13 +14,14 @@ class Persona (object):
         print(self.Nombre, self.DNI, self.direccion, self.tlf)
         if self.email!="":
             print(self.email)
-clase_tic=[]
-for n in range (10):
-    nombre=input("Nombre: ")
-    DNI=input("DNI: ")
-    direccion=input("Dirección: ")
-    tlf=input("Tlf: ")
-    email=input("E-mail:")
-    clase_tic.append(Persona (nombre,DNI,direccion,tlf,email))
-for i in range (10):
-    clase_tic[i].mostrar()
+if __name__== '__main__':
+    clase_tic=[]
+    for n in range (10):
+        nombre=input("Nombre: ")
+        DNI=input("DNI: ")
+        direccion=input("Dirección: ")
+        tlf=input("Tlf: ")
+        email=input("E-mail:")
+        clase_tic.append(Persona (nombre,DNI,direccion,tlf,email))
+    for i in range (10):
+        clase_tic[i].mostrar()
